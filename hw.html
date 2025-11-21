@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h2>javascript arrays and methods</h2>
+    <h2>join() and pop()</h2>
+    <p>the join() element joins array elements into a string and the pop() element removes the last element from an
+        array</p>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <script>
+        var fruits = ["dragan fruit", "watermelon", "carrots", "kiwi"];
+        document.getElementById("myjoin").innerHTML = fruits.join(",");
+        document.getElementById("myfirstpop").innerHTML = fruits; fruits.pop();
+        document.getElementById("mysecondpop").innerHTML = fruits;
+    </script>
+    <h2>js functions</h2>
+    <p>do a calculation the display the result</p>
+    <p id="demo"></p>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+        function average(a, b) {
+            return add(a, b) / 2;
+        }
+        let result = average(1, 8);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+
+</html>
